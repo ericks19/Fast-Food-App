@@ -19,7 +19,7 @@ export const sample_foods = [
     origins: ['persia', 'midle east', 'china'],
     stars: 5,
     imageUrl: 'food-2.jpg',
-    tags: ['Slowfood', 'Lunch']
+    tags: ['SlowFood', 'Lunch']
   },
   {
     id: '3',
@@ -30,7 +30,7 @@ export const sample_foods = [
     origins: ['germany', 'us'],
     stars: 3.5,
     imageUrl: 'food-3.jpg',
-    tags: ['Fastfood', 'Hamburger']
+    tags: ['FastFood', 'Hamburger']
   },
   {
     id: '4',
@@ -41,7 +41,7 @@ export const sample_foods = [
     origins: ['belguim', 'france'],
     stars: 3,
     imageUrl: 'food-4.jpg',
-    tags: ['Fastfood', 'Fry']
+    tags: ['FastFood', 'Fry']
   },
   {
     id: '5',
@@ -52,7 +52,7 @@ export const sample_foods = [
     origins: ['india', 'asia'],
     stars: 3.5,
     imageUrl: 'food-5.jpg',
-    tags: ['Slowfood', 'Soup']
+    tags: ['SlowFood', 'Soup']
   },
   {
     id: '6',
@@ -63,7 +63,7 @@ export const sample_foods = [
     origins: ['italy'],
     stars: 4.0,
     imageUrl: 'food-6.jpg',
-    tags: ['Fastfood', 'Pizza', 'Lunch']
+    tags: ['FastFood', 'Pizza', 'Lunch']
   },
 ]
 
