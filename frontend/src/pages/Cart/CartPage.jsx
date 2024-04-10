@@ -4,6 +4,7 @@ import { useCart } from '../../hooks/useCart'
 import Title from '../../components/Title/Title';
 import { Link } from 'react-router-dom';
 import Price from '../../components/Price/Price';
+import NotFound from '../../components/NotFound/NotFound';
 
 
 const CartPage = () => {
@@ -12,7 +13,9 @@ const CartPage = () => {
     <>
       <Title title="Cart Page" margin="1.5rem 0 0 2.5rem" />
 
-      {cart && cart.items.length > 0 && (
+      {cart.items.length === 0 ? (
+        <NotFound message="Cart Page Is Empty!" />
+      ) : (
         <div className={classes.container}>
           <ul className={classes.list}>
             {cart.items.map(item => (
@@ -27,7 +30,7 @@ const CartPage = () => {
                   <Link to={`/food/${item.food.id}`}>{item.food.name}</Link>
                 </div>
                 <div>
-                  <select 
+                  <select
                   value={item.quantity}
                   onChange={(e) => changeQuantity(item, Number(e.target.value))}
                   >
