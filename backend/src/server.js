@@ -1,8 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import foodRouter from './routes/food.router.js'
-
+import userRouter from './routes/user.router.js'
 const app = express();
+app.use(express.json());
 
 app.use(
   cors({
@@ -12,6 +13,8 @@ app.use(
 )
 
 app.use('/api/foods', foodRouter);
+app.use('/api/user', userRouter);
+
 
 
 const PORT = 5000;
