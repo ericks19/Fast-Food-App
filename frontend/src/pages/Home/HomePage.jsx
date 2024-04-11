@@ -26,7 +26,11 @@ const HomePage = () => {
 
   useEffect(() => {
     getAllTags().then(tags => dispatch({ type: 'TAGS_LOADED', payload: tags}))
-    const loadFoods = tag ? getAllByTag(tag) : searchTerm ? search(searchTerm) : getAll();
+    const loadFoods = tag
+    ? getAllByTag(tag)
+    : searchTerm
+    ? search(searchTerm)
+    : getAll();
 
     loadFoods.then(foods => dispatch({type: 'FOODS_LOADED', payload: foods}))
   },[searchTerm, tag])

@@ -1,7 +1,7 @@
 export const sample_foods = [
   {
     id: '1',
-    name: 'Pizza Pepperoni',
+    name: 'Pizzaaaaaaaaaaaaaaaaa Pepperoni',
     cookTime: '10-20',
     price: 10,
     favorite: false,
