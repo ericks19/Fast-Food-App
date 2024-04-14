@@ -2,8 +2,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
 import cors from 'cors';
-import foodRouter from './routes/food.router.js'
-import userRouter from './routes/user.router.js'
+import foodRouter from './routers/food.router.js'
+import userRouter from './routers/user.router.js'
+import orderRouter from './routers/order.router.js';
+
+
 import { dbconnect } from './config/database.config.js';
 dbconnect();
 
@@ -19,6 +22,7 @@ app.use(
 
 app.use('/api/foods', foodRouter);
 app.use('/api/user', userRouter);
+app.use('/api/orders', orderRouter);
 
 
 
