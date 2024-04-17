@@ -41,8 +41,6 @@ router.put(
     order.status = OrderStatus.PAYED;
     await order.save();
 
-    sendEmailReceipt(order);
-
     res.send(order._id);
   })
 );

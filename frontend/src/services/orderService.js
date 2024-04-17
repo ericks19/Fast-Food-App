@@ -3,6 +3,7 @@ import axios from 'axios';
 export const createOrder = async order => {
   try {
     const { data } = axios.post('/api/orders/create', order);
+  console.log("data-orderService", order)
     return data;
   } catch (error) {}
 };

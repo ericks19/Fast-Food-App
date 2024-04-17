@@ -12,6 +12,7 @@ import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 import OrderItemsList from '../../components/OrderItemsList/OrderItemsList';
 import Map from '../../components/Map/Map';
+
 export default function CheckoutPage() {
   const { cart } = useCart();
   const { user } = useAuth();
@@ -26,7 +27,7 @@ export default function CheckoutPage() {
 
   const submit = async data => {
     if (!order.addressLatLng) {
-      toast.warning('Please select your location on the map');
+      toast.warning('Please select your location on the mapa');
       return;
     }
     await createOrder({ ...order, name: data.name, address: data.address });
@@ -58,7 +59,6 @@ export default function CheckoutPage() {
           <Map
             location={order.addressLatLng}
             onChange={latlng => {
-              console.log(latlng);
               setOrder({ ...order, addressLatLng: latlng });
             }}
           />
