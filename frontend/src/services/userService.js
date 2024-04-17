@@ -12,7 +12,7 @@ export const login = async (email, password) => {
 }
 
 export const register = async registerData => {
-  const { data } = await axios.post('api/users/register', registerData);
+  const { data } = await axios.post('/api/user/register', registerData);
   localStorage.setItem('user', JSON.stringify(data));
   return data;
 };
@@ -20,3 +20,13 @@ export const register = async registerData => {
 export const logout = () => {
   localStorage.removeItem('user')
 }
+
+export const updateProfile = async user => {
+  const { data } = await axios.put('/api/user/updateProfile', user);
+  localStorage.setItem('user', JSON.stringify(data));
+  return data;
+};
+
+export const changePassword = async passwords => {
+  await axios.put('/api/user/changePassword', passwords);
+};
