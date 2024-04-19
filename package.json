@@ -7,7 +7,8 @@
     "start": "cd backend && npm start",
     "prebuild": "cd backend && npm install && cd .. && cd frontend && npm install",
     "build": "cd frontend && npm run build",
-    "postbuild": "mv frontend/build/* backend/src/public && rm -rf frontend/build"
+    "postbuild": "mkdir -p backend/src/public && mv frontend/build/* backend/src/public && rm -rf frontend/build"
+
   },
   "keywords": [],
   "author": "",
