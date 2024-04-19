@@ -10,6 +10,7 @@ import AuthRoute from './components/AuthRoute/AuthRoute'
 import PaymentPage from './pages/Payment/PaymentPage'
 import OrderTrackPage from './pages/OrderTrack/OrderTrackPage'
 import ProfilePage from './pages/Profiel/ProfilePage'
+import OrdersPage from './pages/Orders/OrdersPage'
 
 const AppRoutes = () => {
   return (
@@ -45,7 +46,12 @@ const AppRoutes = () => {
         </AuthRoute>
         }
       />
-
+      <Route path="/orders/:filter?" element={
+        <AuthRoute>
+         <OrdersPage/>
+        </AuthRoute>
+        }
+      />
 
 
 
