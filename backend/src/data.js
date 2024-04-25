@@ -96,3 +96,4 @@ export const sample_users = [
     isAdmin: true,
   },
 ];
+

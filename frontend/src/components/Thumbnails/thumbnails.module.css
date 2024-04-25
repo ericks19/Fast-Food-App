@@ -17,6 +17,12 @@
   flex-direction: column;
   overflow: hidden;
   color: #e72929;
+  background-color: #fbfbfb;
+  opacity: 0.8;
+}
+
+.list li a:hover {
+  opacity: 1;
 }
 
 .image {

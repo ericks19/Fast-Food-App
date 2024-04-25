@@ -9,7 +9,7 @@ import CheckoutPage from './pages/Checkout/CheckoutPage'
 import AuthRoute from './components/AuthRoute/AuthRoute'
 import PaymentPage from './pages/Payment/PaymentPage'
 import OrderTrackPage from './pages/OrderTrack/OrderTrackPage'
-import ProfilePage from './pages/Profiel/ProfilePage'
+import ProfilePage from './pages/Profile/ProfilePage'
 import OrdersPage from './pages/Orders/OrdersPage'
 
 const AppRoutes = () => {

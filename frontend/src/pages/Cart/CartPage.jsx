@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import Price from '../../components/Price/Price';
 import NotFound from '../../components/NotFound/NotFound';
 
-
 const CartPage = () => {
   const { cart, removeFromCart, changeQuantity } = useCart();
   return (

@@ -4,11 +4,22 @@
   margin-top: 1rem;
   border-radius: 5px;
   padding: 0.5rem 1rem;
+  color: white;
 }
 
 .table td {
   height: 3rem;
 }
+
+.table td a {
+  color:#eeeeee;
+  transition: 0.1s;
+}
+
+.table td a:hover {
+  color:#e72929;
+}
+
 .table td img {
   width: 3rem;
   height: 3rem;

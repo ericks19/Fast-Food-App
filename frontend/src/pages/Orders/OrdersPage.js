@@ -46,7 +46,7 @@ export default function OrdersPage() {
           {allStatus.map(state => (
             <Link
               key={state}
-              className={state == filter ? classes.selected : ''}
+              className={state === filter ? classes.selected : ''}
               to={`/orders/${state}`}
             >
               {state}
@@ -66,7 +66,7 @@ export default function OrdersPage() {
         orders.map(order => (
           <div key={order.id} className={classes.order_summary}>
             <div className={classes.header}>
-              <span>{order.id}</span>
+              <span>Order id: {order.id}</span>
               <span>
                 <DateTime date={order.createdAt} />
               </span>

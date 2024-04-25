@@ -1,11 +1,13 @@
 .header {
-  background: rgb(250, 250, 250);
+  background: rgb(5, 5, 5);
   padding: 0;
   border-bottom: 1px solid #e72929;
 }
 
 .header a {
-  color: #af1313;
+  color: #af1313; 
+  transition: 0.4s;
+  border-radius: 10px;
 }
 
 .header a:hover {
@@ -21,8 +23,16 @@
 }
 
 .logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   font-weight: bold;
   padding: 1rem;
+}
+
+.icon {
+  margin-left: 2px;
+  font-size: 21px;
 }
 
 .header ul {
@@ -43,8 +53,9 @@
 .menu {
   position: absolute;
   z-index: 1001;
-  background-color: whitesmoke;
+  background-color: rgb(5, 5, 5);
   display: none;
+  border-radius: 0 0 10px 10px;
 }
 
 .menu_container:hover .menu {
