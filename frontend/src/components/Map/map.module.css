@@ -1,6 +1,7 @@
 .container {
   position: relative;
-  width: 35rem;
+  width: 50vw;
+  min-width: 350px;
   height: 22rem;
   text-align: center;
 }

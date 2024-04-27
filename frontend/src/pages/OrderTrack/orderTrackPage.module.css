@@ -1,5 +1,6 @@
 .container {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -10,10 +11,12 @@
   flex-direction: column;
   width: 100%;
   max-width: 35rem;
-  margin-right: 1rem;
   color: white;
 }
-
+.content h1 {
+  font-size: clamp(20px, 4vw, 38px);
+  margin-right: 10px;
+}
 .header {
   margin-bottom: 1rem;
 }
@@ -26,6 +29,7 @@
 .header strong {
   display: inline-block;
   width: 20%;
+  margin-right: 10px;
 }
 
 .payment {

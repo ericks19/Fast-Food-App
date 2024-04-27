@@ -6,6 +6,7 @@ import classes from './loginPage.module.css'
 import Title from "../../components/Title/Title";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
+import InfoBox from "../../components/InfoBox/InfoBox";
 
 export default function LoginPage() {
   const {
@@ -31,6 +32,12 @@ export default function LoginPage() {
   return <div className={classes.container}>
     <div className={classes.details}>
       <Title title="Login" />
+      <InfoBox>
+        <p>You can log in with the following user:</p>
+        <p>User: jane@gmail.com</p>
+        <p>Password: 12345</p>
+        <p>You can also register below.</p>
+      </InfoBox>
       <form onSubmit={handleSubmit(submit)} noValidate>
         <Input
         type="email"

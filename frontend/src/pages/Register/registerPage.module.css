@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .details {
@@ -20,4 +20,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.login a:hover {
+  color: #e72929;
+  transition: 0.1s;
 }

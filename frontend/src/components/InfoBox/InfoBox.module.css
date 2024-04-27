@@ -1,0 +1,44 @@
+.user_info_window{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  width: 190px;
+  background-color: #fffffff7;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding-left: 5px;
+  transition: right 0.3s ease;
+}
+
+.user_info_window.open {
+  right: 1vw;
+}
+
+.user_info_window.closed {
+  right: -300px;
+}
+
+.close_btn {
+  margin-top: 9px;
+  align-self: center;
+  width: 40%;
+  padding: 5px 10px;
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.1s;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+  font-size: 11px;
+}
+
+.close_btn:hover {
+  opacity: 1;
+}
+
+.user_info_content p {
+  font-size: 10px;
+  margin-bottom: -5px;
+}

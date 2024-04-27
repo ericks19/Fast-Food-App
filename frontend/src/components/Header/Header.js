@@ -1,15 +1,9 @@
 import React from 'react';
-import { FaFire } from "react-icons/fa";
-import { SiFireship } from "react-icons/si";
 import { GiCampfire } from "react-icons/gi";
-import { LiaFireSolid } from "react-icons/lia";
-import { ImFire } from "react-icons/im";
 import { Link } from 'react-router-dom';
 import classes from './header.module.css'
 import { useCart } from '../../hooks/useCart';
 import { useAuth } from '../../hooks/useAuth';
-import { GiSmallFire } from "react-icons/gi";
-import { GiFireZone } from "react-icons/gi";
 
 
 const Header = () => {
@@ -39,7 +33,7 @@ const Header = () => {
               )}
               <li>
                 <Link to="/cart">
-                  Cart
+                  <span>Cart </span>
                   {cart.totalCount > 0 &&
                   <span className={classes.cart_count}>{cart.totalCount}</span>}
                 </Link>

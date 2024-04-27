@@ -6,7 +6,7 @@
 
 .header a {
   color: #af1313; 
-  transition: 0.4s;
+  transition: 0.3s;
   border-radius: 10px;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .cart_count {
-  background-color: #ff4d4d;
+  background-color: #f84545;
   color: white;
   padding: 0.1rem 0.45rem;
   border-radius: 100rem;

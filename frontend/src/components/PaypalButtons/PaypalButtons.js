@@ -44,13 +44,11 @@ function Buttons({ order }) {
       ],
     });
   };
- 
+
   const onApprove = async (data, actions) => {
     try {
       const payment = await actions.order.capture();
-      console.log("que sea acaaaa PAYMENT", payment)
       const orderId = await pay(payment.id);
-      console.log("que sea acaaaa paypalbutons orderId", orderId)
       clearCart();
       toast.success('Payment Saved Successfully', 'Success');
       navigate('/track/' + orderId);
