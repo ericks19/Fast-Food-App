@@ -83,13 +83,13 @@ export default function RegisterPage() {
           />
 
           <Input
-            type="text"
-            label="Address"
-            {...register('address', {
+            type="number"
+            label="Contact"
+            {...register('contact', {
               required: true,
               minLength: 10,
             })}
-            error={errors.address}
+            error={errors.contact}
           />
           <Button type="submit" text="Register" />
           <div className={classes.login}>

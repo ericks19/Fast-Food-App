@@ -19,10 +19,6 @@ function Input(
     }
   };
 
-
-
-
-
   return (
     <InputContainer label={label}>
       <input

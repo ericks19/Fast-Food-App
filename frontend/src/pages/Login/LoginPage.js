@@ -34,7 +34,7 @@ export default function LoginPage() {
       <Title title="Login" />
       <InfoBox>
         <p>You can log in with the following user:</p>
-        <p>User: jane@gmail.com</p>
+        <p>User: lois@gmail.com</p>
         <p>Password: 12345</p>
         <p>You can also register below.</p>
       </InfoBox>

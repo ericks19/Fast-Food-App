@@ -22,7 +22,7 @@ export default function PaymentPage() {
       <InfoBox>
         <p>You can simulate a payment using these data.</p>
         <p>Email: fast-food@example.com</p>
-        <p>Password: Fast-Food@example </p>
+        <p>Password: food1234</p>
       </InfoBox>
         <div className={classes.content}>
           <Title title="Order Form" fontSize="1.6rem" />
@@ -32,8 +32,8 @@ export default function PaymentPage() {
               <span>{order.name}</span>
             </div>
             <div>
-              <h3>Address: </h3>
-              <span>{order.address}</span>
+              <h3>Contact: </h3>
+              <span>{order.contact}</span>
             </div>
           </div>
           <OrderItemsList order={order} />

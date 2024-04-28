@@ -30,7 +30,7 @@ export default function CheckoutPage() {
       toast.warning('Please select your location on the mapa');
       return;
     }
-    await createOrder({ ...order, name: data.name, address: data.address });
+    await createOrder({ ...order, name: data.name, contact: data.contact });
     navigate('/payment');
   };
   return (
@@ -42,14 +42,21 @@ export default function CheckoutPage() {
             <Input
               defaultValue={user.name}
               label="Name"
-              {...register('name')}
+              {...register('name',{
+                required: true,
+                minLength: 5
+              })}
               error={errors.name}
             />
             <Input
-              defaultValue={user.address}
-              label="Address"
-              {...register('address')}
-              error={errors.address}
+              type="number"
+              defaultValue={user.contact}
+              label="Contact"
+              {...register('contact', {
+                required: true,
+                minLength: 8,
+              })}
+              error={errors.contact}
             />
           </div>
           <OrderItemsList order={order} />

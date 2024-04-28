@@ -38,8 +38,8 @@ export default function OrderTrackPage() {
               {order.name}
             </div>
             <div>
-              <strong>Address</strong>
-              {order.address}
+              <strong>Contact</strong>
+              {order.contact}
             </div>
             <div>
               <strong>State</strong>
