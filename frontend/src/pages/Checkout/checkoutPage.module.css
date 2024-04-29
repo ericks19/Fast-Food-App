@@ -7,10 +7,13 @@
 }
 
 .content {
-  width: 35rem;
+  width: 50vw;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
-.content,
 .inputs {
   display: flex;
   flex-direction: column;
