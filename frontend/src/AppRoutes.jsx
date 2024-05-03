@@ -52,12 +52,6 @@ const AppRoutes = () => {
         </AuthRoute>
         }
       />
-
-
-
-
-
-
     </Routes>
   )
 }
