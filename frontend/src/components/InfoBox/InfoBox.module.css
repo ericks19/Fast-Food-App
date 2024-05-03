@@ -9,6 +9,7 @@
   border-radius: 20px;
   padding-left: 5px;
   transition: right 0.3s ease;
+  z-index: 1001;
 }
 
 .user_info_window.open {
