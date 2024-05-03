@@ -9,7 +9,6 @@ import InfoBox from '../../components/InfoBox/InfoBox';
 
 export default function PaymentPage() {
   const [order, setOrder] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,20 +17,14 @@ export default function PaymentPage() {
         setOrder(data);
       } catch (error) {
         console.error('Error fetching order:', error);
-      } finally {
-        setLoading(false);
       }
     };
 
     fetchData();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
   if (!order) {
-    return <p>Error: Unable to fetch order</p>;
+    return <p className={classes.error}>Error: Unable to fetch order try to refresh the page</p>;
   }
 
   return (
